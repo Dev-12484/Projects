@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Side Bar</title>
+        <style>
+            ul{
+                list-style:none;
+            }
+            .sidebar{
+                background-color: black;
+                height:625px;
+                width:250px
+            }
+            a{
+                color:white;
+                size:18px;
+                font-family: jokerman;
+            }
+            .sidebar ul a li{
+                padding: 0px 20px;
+                line-height:90px;
+                transition: all 0.3s;
+            }
+            .sidebar h1{
+                color:white;
+                text-align: center;
+                line-height: 90px;
+                transition:all 0.2s;
+            }
+            .sidebar ul li:hover{
+                background-color: chartreuse;
+            }
+            .sidebar h1:hover{
+                background-color:crimson;
+            }
+            *{
+                margin:0px;
+                padding:0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            <h1>Welcome!</h1>
+            <ul>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Youtube</li></a>
+                <a href=""><li>Pro</li></a>
+                <a href=""><li>About Us</li></a>
+            </ul>
+        </div>
+    </body>
+</html>
