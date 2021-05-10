@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hide / Show</title>
+    </head>
+    <body>
+        <button onclick="effect()">Hide / Show</button>
+        <div id="content" style="display:none;">
+            <h1>Paragraph</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam, reprehenderit odit eligendi ipsum perferendis, animi pariatur nihil quia blanditiis eos excepturi libero! Aliquam, quo molestiae. Quia, ea illo provident explicabo magnam velit iusto exercitationem quo iste assumenda fugit quibusdam alias qui, consequuntur odio deleniti ad atque! Nulla nobis iure laudantium necessitatibus non quae quam consequuntur veniam eaque sint amet corrupti voluptate eius numquam, vel temporibus at expedita iste. Neque nemo similique accusantium fugit maiores tempore laboriosam inventore hic eligendi nesciunt facilis rem commodi necessitatibus dolorem voluptatibus, autem suscipit. Accusamus quasi quidem odio dignissimos sequi vero, sunt, fugiat, dicta libero itaque dolor ipsam veniam? Deleniti repellat nisi et hic natus vel similique numquam dolores rerum, corrupti, sed doloremque, facilis sit! Eveniet, odio exercitationem iure quis eius error itaque asperiores ipsam pariatur facere dolore non blanditiis quaerat repudiandae accusamus! Pariatur beatae omnis libero veritatis reiciendis, hic adipisci nam similique quod fuga harum doloribus reprehenderit corporis aspernatur animi quae quaerat quo. Quaerat ab autem repellendus aliquid dolorem rem dicta, inventore in laboriosam minima? Dolore autem voluptate est ipsum aut quia iusto minus modi soluta nisi? Fuga officia consequuntur vero optio mollitia doloribus inventore numquam excepturi recusandae sed tempora qui ad non eum perspiciatis sit repellendus, corrupti possimus commodi? Modi quae eius consequuntur non ullam maxime accusantium perspiciatis voluptates suscipit nulla libero aliquid itaque, blanditiis laudantium? Labore dicta id ea enim earum officia maiores tenetur! Aliquam nihil error quis iusto. Quasi veritatis deserunt, provident repudiandae esse quae perferendis ipsa perspiciatis? Sequi, vero! Tenetur consequatur debitis distinctio. Odit, officiis? Dolor ad quae aspernatur id deleniti fugiat vitae ut minima non? Labore esse eveniet ipsa architecto nostrum hic tempora consequuntur consequatur voluptatem ut, recusandae voluptates debitis error, repudiandae accusantium autem. Id, consectetur! Dolore, dolorum. Eius eligendi atque a animi nesciunt quo ipsa debitis sunt blanditiis.</p>
+        </div>
+        <script>
+            function effect(){
+                var x = document.getElementById("content");
+                if( x.style.display == "none"){
+                    x.style.display="block";
+                }
+                else{
+                    x.style.display="none";
+                }
+            }
+        </script>
+    </body>
+</html>

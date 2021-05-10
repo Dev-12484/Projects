@@ -1,0 +1,49 @@
+ .box{
+    width:100px;
+    height:100px;
+    
+
+    position:relative;
+    animation-name:sample;
+    animation-duration:8s;
+    animation-iteration-count: 2;
+    /* animation-direction:reverse;*/ 
+    animation-timing-function: cubic-bezier(0,0.001,0.002,1);
+}
+
+@keyframes sample{
+    0%{ left:0px;top:0px;background-color:red;border-radius: 50%;}
+    10%{left:150px;top:0px;background-color:blue; border-radius: 50%;}
+    20%{ left:150px;top:150px;background-color:green;border-radius: 50%;}
+    30%{ left:300px;top:150px;background-color:yellow;border-radius: 50%;}
+    40%{ left:300px;top:300px;background-color:orange;border-radius: 50%;}
+    50%{left:400px;top:300px;background-color:cyan;border-radius: 50%;}
+    60%{ left:400px;top:400px;background-color:wheat;border-radius: 50%;}
+    70%{left:500px;top:400px;background-color:lightblue;border-radius: 50%;}
+    80%{left:500px;top:500px;background-color:maroon;border-radius: 50%;}
+    90%{left:600px;top:500px;background-color:magenta;border-radius: 50%;}
+    100%{left:600px;top:500px;background-color:pink;border-radius: 50%;}
+} 
+
+ .box1{
+    height:120px;
+    width:120px;
+    background-color: red;
+    position: relative;
+    left:90%;
+    top:0px;
+
+    animation-name: sample1;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0,0.001,0.002,1);
+}
+
+@keyframes sample1{
+    0%{ left:1024px;top:0px;background-color:red;border-radius: 50%;}
+    10%{ left:874px;top:0px;background-color: blue;border-radius:50%;}
+    20%{ left:874px;top:150px;background-color: green;border-radius:50%;}
+    30%{ left:724px;top:150px;background-color: yellow;border-radius:50%;}
+    30%{ left:574px;top:150px;background-color: yellow;border-radius:50%;}
+    100%{left:600px;top:0px;background-color:pink;border-radius: 50%;}
+} 
