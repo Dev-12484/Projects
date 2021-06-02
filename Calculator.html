@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            table{
+                height:600px;
+                width:50%;
+                margin-left:300px;
+                border-radius: 90px;
+                box-shadow: 0px 0px 20px cyan;
+            }
+            button{
+                background-color: black;
+                color:white;
+                width:75px;
+                margin-left: 30px;
+                height:75px;
+                border-radius: 50%;
+                font-size:25px;
+            }
+            input{
+                width:90%;
+                height:100px;
+                color:white;
+                background-color: black;
+                box-shadow: 0px 0px 20px yellow;
+                margin-left:30px;
+                font-size: 50px;
+                border-radius: 90px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td  colspan="4"> <input type="text" id="result"></td>
+            </tr>
+            <tr style="border-radius:50%;">
+                <td> <button onclick="document.getElementById('result').value += 7 "> 7 </button> </td>
+                <td> <button onclick="document.getElementById('result').value += 8 "> 8 </button> </td>
+                <td> <button onclick="document.getElementById('result').value += 9 "> 9 </button> </td>
+                <td> <button onclick="document.getElementById('result').value += '*' "> * </button> </td>
+            </tr>
+
+            <tr style="border-radius:50%;">
+                <td> <button onclick="document.getElementById('result').value += 6 "> 6 </button> </td>
+                <td> <button onclick="document.getElementById('result').value += 5 "> 5 </button> </td>
+                <td> <button onclick="document.getElementById('result').value += 4 "> 4 </button> </td>
+                <td> <button onclick="document.getElementById('result').value += '-' "> - </button> </td>
+            </tr>
+
+            <tr style="border-radius:50%;">
+                <td> <button onclick="document.getElementById('result').value += 3 "> 3 </button> </td>
+                <td> <button onclick="document.getElementById('result').value += 2 "> 2 </button> </td>
+                <td> <button onclick="document.getElementById('result').value += 1 "> 1 </button> </td>
+                <td> <button onclick="document.getElementById('result').value += '+' "> + </button> </td>
+            </tr>
+
+            <tr style="border-radius:50%;">
+                <td> <button onclick="document.getElementById('result').value += '/' "> / </button> </td>
+                <td> <button onclick="document.getElementById('result').value += 0 "> 0 </button> </td>
+                <td> <button onclick="document.getElementById('result').value += '.' "> . </button> </td>
+                <td> <button onclick="document.getElementById('result').value = eval(document.getElementById('result').value) ;"> = </button> </td>
+            </tr>
+            <tr style="border-radius:50%;">
+                <td colspan="4"><button onclick="document.getElementById('result').value = '' " style="width:90%;">Clear</button></td>
+            </tr>
+        </table>
+    </body>
+</html>
