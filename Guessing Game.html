@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Guess Game</title>
+    </head>
+    <body>
+        <h1>Guessing Game</h1>
+        <h3></h3>
+        <input type="number" id="number"><button id="guess" onclick="guess()">Guess</button>
+        <div id="gut"><div id="result"></div></div> 
+        <label id="hut"></label>
+        <script>
+            var count = 0; 
+            var pot = 44;
+            function guess(){
+
+            count++; 
+            
+            var pot = 44;
+            var guessed = document.getElementById("number").value;
+            var box = document.getElementById("gut");
+
+            if(guessed == pot){
+                box.innerHTML+="<div>" + pot + " is the correct number</div>";
+                document.getElementById("hut").innerHTML="You took" + count + "tries";               
+            }
+            elseif( guessed < pot){
+                box.innerHTML+="<div> The number is higher</div>";
+            }
+            
+            elseif( guessed > pot){
+                box.innerHTML+="<div> The number is lower</div>";
+            }
+            
+            }
+            
+            
+        </script>
+    </body>
+</html>
